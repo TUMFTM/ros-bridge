@@ -1,3 +1,8 @@
-# Point Cloud Map Creation
+# RAW PCL RECORDER
 
-Find documentation about the PCL recorder package [__here__](https://carla.readthedocs.io/projects/ros-bridge/en/latest/pcl_recorder/).
+This package allows you to subscribe to and save any pointcloud topic. 
+
+Example:
+```
+ros2 launch raw_pcl_recorder raw_pcl_recorder.launch.py data_path:=/tum/data topic_name:=/sensing/lidar/concatenated/pointcloud
+```
