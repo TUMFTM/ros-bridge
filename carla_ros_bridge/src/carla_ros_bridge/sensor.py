@@ -112,7 +112,7 @@ class Sensor(Actor):
                 self.node.logwarn("{}: No relative spawn pose defined".format(self.get_prefix()))
                 return
             pose = self.relative_spawn_pose
-            child_frame_id = self.get_prefix()
+            child_frame_id = self._frame_id
             if self.parent is not None:
                 frame_id = self.parent.get_prefix()
             else:
